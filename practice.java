@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// reverse string 
 public class practice {
 
     public static void reverseString(int size) {
