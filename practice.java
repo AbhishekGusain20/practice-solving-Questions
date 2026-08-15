@@ -1,6 +1,6 @@
 import java.util.Scanner;
 // reverse string 
-public class practice {
+/*public class practice {
 
     public static void reverseString(int size) {
 
@@ -36,5 +36,20 @@ public class practice {
 
 
         reverseString(size);
+    }
+}*/
+
+//  toLowerCase String
+
+public class practice{
+    public static  String toLowerCase(String name){
+        System.out.println(name.toLowerCase());
+        return name.toLowerCase();
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter word");
+        String name = sc.next();
+        toLowerCase(name);
     }
 }
