@@ -83,3 +83,23 @@ public class practice{
         countVowels(word);
     }
 }
+
+
+
+
+
+
+
+//reverse String using StringBuilder
+
+ public class practice{
+        public static void main(String[] args){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter String");
+            String hnjii = sc.next();
+            StringBuilder sb = new StringBuilder(hnjii);
+            System.out.println(sb);
+            sb.reverse();
+            System.out.println("reverse : " + sb);
+        }
+    }
