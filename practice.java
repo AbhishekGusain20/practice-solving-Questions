@@ -1,6 +1,11 @@
 import java.util.Scanner;
+<<<<<<< HEAD
 // reverse string 
 public class practice {
+=======
+
+/*public class practice {
+>>>>>>> f83e14f (sorting)
 
     public static void reverseString(int size) {
 
@@ -42,6 +47,14 @@ public class practice {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> f83e14f (sorting)
 
 //  toLowerCase String
 
@@ -63,6 +76,11 @@ public class practice{
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f83e14f (sorting)
 //Count vowels
 
 public class practice{
@@ -82,6 +100,7 @@ public class practice{
         String word = sc.nextLine();
         countVowels(word);
     }
+<<<<<<< HEAD
 }
 
 
@@ -93,6 +112,11 @@ public class practice{
 //reverse String using StringBuilder
 
  public class practice{
+=======
+} 
+
+    public class practice{
+>>>>>>> f83e14f (sorting)
         public static void main(String[] args){
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter String");
@@ -102,6 +126,7 @@ public class practice{
             sb.reverse();
             System.out.println("reverse : " + sb);
         }
+<<<<<<< HEAD
     }
 
 
@@ -109,6 +134,11 @@ public class practice{
 
 
 
+=======
+    }      
+   
+        
+>>>>>>> f83e14f (sorting)
 
 
         // palindrome
@@ -131,4 +161,22 @@ public class practice{
              System.out.println(word);
              palindrome(word);
             }
+<<<<<<< HEAD
         }
+=======
+        } */
+
+            public class practice{
+                public static void main(String[] args) {
+                    Scanner sc = new Scanner(System.in);
+                    int size = sc.nextInt();
+                    int[] array = new int[size];
+                     for(int i=0; i<size; i++){
+                         array[i] = sc.nextInt();
+                     }
+                         
+                     }}
+                
+            
+        
+>>>>>>> f83e14f (sorting)
