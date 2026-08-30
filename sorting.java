@@ -1,4 +1,4 @@
-//sorting array in ascending order
+//Bubble sorting array in ascending order
 
 
 import java.util.Scanner;
@@ -48,7 +48,7 @@ sorting(array);
 
 
 
-//sorting array  in descending order withount using function
+//Bubble sorting array  in descending order withount using function
 
 
 public class sorting{
@@ -90,7 +90,7 @@ public class sorting{
 
 
 
-// sort array in ascendind order and count swaps
+//Bubble sort array in ascendind order and count swaps
 
 public class sorting{
     public static void main(String[] args) {
@@ -129,4 +129,60 @@ int swaps = 0;
 }
 
         
-    
+
+
+
+
+
+/*Takes array input from the user
+Sorts using Bubble Sort
+Prints the array after every pass
+Prints the final sorted array
+Prints total swaps */
+
+
+import java.util.Scanner;
+
+public class sorting{
+        public static void sorting(int[] array, int size){
+              //sorting 
+              int swaps = 0;
+              for(int i=0; i<size-1; i++){
+                for(int j=0; j<size-i-1; j++){
+                    if(array[j]>array[j+1]){
+                        int temp = array[j];
+                        array[j] = array[j+1];
+                        array[j+1] = temp;
+                       
+                        swaps++;
+                        //print array after every swap
+                        for(int k=0; k<size; k++){
+                            System.out.print(array[k]+" ");
+                        }
+                        System.out.println();
+                    }
+                    
+                }
+                
+              }
+              //print final sorted array
+                for(int i=0; i<size; i++){
+                    System.out.print(array[i]+" ");
+                }
+                System.out.println();
+                System.out.println("total Swaps: "+ swaps);
+        }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter size");
+        int size = sc.nextInt();
+
+        int[] array = new int[size];
+        System.out.println("Enter elements");
+        for(int i=0; i<size; i++){
+            array[i] = sc.nextInt();
+        }
+        System.out.println("output: ");
+        sorting(array, size);
+    }
+}
