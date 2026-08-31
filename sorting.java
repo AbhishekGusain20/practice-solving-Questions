@@ -228,3 +228,45 @@ public class sorting{
         }
     }
 
+
+
+
+
+
+
+//Find the second largest element using Bubble Sort
+
+import java.util.Scanner;
+public class sorting{
+        public static void SecondLargest(int[] arr, int n){
+            Scanner sc = new Scanner(System.in);
+            //array element 
+            for (int i=0; i<n; i++){
+                arr[i] = sc.nextInt();
+            }
+            //sorting 
+            for(int i=0; i<n-1; i++){
+                for(int j=0; j<n-i-1; j++){
+                    if(arr[j]>arr[j+1]){
+                        int temp = arr[j];
+                        arr[j] = arr[j+1];
+                        arr[j+1] = temp;}
+                }
+            } //print array
+            for(int i=0; i<n; i++){
+                System.out.print(arr[i]+ " ");
+            }
+            System.out.println();
+            System.out.println("Second largest number: "+ arr[n-2]);
+        
+        }
+        public static void main(String[] args){
+            Scanner sc = new Scanner(System.in);
+           System.out.println("enter size");
+           int n = sc.nextInt();
+           System.out.println("enter element");
+           int[] arr = new int[n];
+         SecondLargest(arr, n);
+        }
+    }
+
