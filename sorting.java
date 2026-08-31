@@ -186,3 +186,45 @@ public class sorting{
         sorting(array, size);
     }
 }
+
+
+
+
+
+
+
+
+//Count the number of comparisons performed by Bubble Sort
+
+import java.util.Scanner;
+public class sorting{
+        public static void main(String[] args){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter size");
+            int n = sc.nextInt();
+            int[] array = new int[n];
+            System.out.println("enter elements");
+             for(int i=0; i<n; i++){
+              array[i] = sc.nextInt();
+             }
+//swaping+count comaparisons
+             int comparisons = 0;
+             for(int i=0; i<n-1; i++){
+                for(int j=0; j<n-i-1; j++){
+                    if(array[j]>array[j+1]){
+                        int temp = array[j];
+                        array[j]=array[j+1];
+                        array[j+1]=temp;
+                        comparisons++;
+                    }
+                }
+             }
+             System.out.print("output: ");
+             for(int i=0; i<n; i++){
+                System.out.print(array[i]+" ");
+             }
+             System.out.println();
+             System.out.println("total comparison: "+ comparisons);
+        }
+    }
+
