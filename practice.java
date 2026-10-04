@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
- reverse string 
+ //reverse string 
 public class practice {
 
 
@@ -158,17 +158,39 @@ public class practice{
 
         } 
 
-            public class practice{
+
+
+
+ //Count even and odd numbers in an array.
+
+             public class practice{
                 public static void main(String[] args) {
                     Scanner sc = new Scanner(System.in);
-                    int size = sc.nextInt();
-                    int[] array = new int[size];
-                     for(int i=0; i<size; i++){
-                         array[i] = sc.nextInt();
-                     }
-                         
-                     }}
-                
+                    System.out.println("Enter array size");
+                    int m = sc.nextInt();
+                    int[] array = new int[m];
+                    System.out.println("enter array elements");
+                    for(int i=0; i<m; i++){
+                        array[i] = sc.nextInt();
+                    }
+                    for(int i=0; i<m; i++){
+                        System.out.print(array[i]+" ");
+                    }
+                    System.out.println();
+                    int evencount = 0;
+                     int oddcount = 0;
+                    for(int i=0; i<m; i++){
+                        if(array[i]%2==0){
+                    evencount++;
+                        }else {
+                            oddcount++;
+                        }
+                    }
+                    System.out.println("even count" + " "+evencount);
+                    System.out.println("odd count" + " "+oddcount);
+
+                }
+            }
             
         
 
