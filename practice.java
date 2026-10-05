@@ -234,3 +234,29 @@ public class practice{
 
 
 
+
+//Print elements at even indexes
+ public class practice{
+                    public static void main(String[] args) {
+                        Scanner sc = new Scanner(System.in);
+                        System.out.println("Enter a number");
+                        int a = sc.nextInt();
+                       int[] array = new int[a];
+                       System.out.println("Enter elements");
+                       for (int i = 0; i < a; i++) {
+                           array[i] = sc.nextInt();
+                       }
+                         for (int i =0; i<a; i++) {
+                           System.out.print(array[i]+" ");
+                       }
+System.out.println();
+
+                        for (int i =0; i<a; i++){
+                            if(i%2==0){
+                          System.out.print(array[i]+" ");
+                            }
+                        }
+                        System.out.println();
+                    }
+                }
+
