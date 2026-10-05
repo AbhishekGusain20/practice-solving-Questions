@@ -194,3 +194,43 @@ public class practice{
             
         
 
+
+
+
+//Search an element    Take a number from the user and check whether it exists in the array.
+ public class practice{
+                    public static void main(String[] args) {
+                        Scanner sc = new Scanner(System.in);
+                        System.out.println("Enter a number");
+                        int a = sc.nextInt();
+                        System.out.println("Enter a size");
+                        int m = sc.nextInt();
+                        int[] array = new int[m];
+                        System.out.println("enter elements");
+                        for(int i=0; i<m; i++){
+                            array[i] = sc.nextInt();
+                        }
+                         for(int i=0; i<m; i++){
+                            System.out.print(array[i]+" ");
+                        }
+                        System.err.println();
+
+                        boolean found = false;
+                        for(int i=0; i<m; i++){
+
+                        if(a==array[i]){
+                         found = true;
+                         break;
+                        }
+                    }
+                    if(found){
+                        System.out.println(a+" present in array");
+                    }else{
+                        System.out.println(a+" not present in array");
+                    }
+
+                    }
+                }
+
+
+
