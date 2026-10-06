@@ -309,3 +309,21 @@ int smallest = array[0];
                     }
                 }
 
+
+
+
+
+ //Take two Strings and check whether they are equal.
+                                import java.util.Scanner;
+                                public class practice{
+                                    public static void checkTwoStrings(String word1, String word2){
+                                      System.out.println(word1.equals(word2));
+                                    }
+                                    public static void main(String[] args) {
+                                        Scanner sc = new Scanner(System.in);
+                                        System.out.println("enter words");
+                                        String word1 = sc.next();
+                                        String word2 = sc.next();
+                                        checkTwoStrings(word1, word2);
+                                     }
+                                }
