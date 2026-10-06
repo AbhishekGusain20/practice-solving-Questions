@@ -260,3 +260,52 @@ System.out.println();
                     }
                 }
 
+
+
+
+
+// find largest and smallest element and second largest , second smallest element in array
+ public class practice{
+                    public static void main(String[] args) {
+                        Scanner sc = new Scanner(System.in);
+                        System.out.println("Enter a number");
+                        int a = sc.nextInt();
+                       int[] array = new int[a];
+                       System.out.println("Enter elements");
+                       for (int i = 0; i < a; i++) {
+                           array[i] = sc.nextInt();
+                       }
+                         for (int i =0; i<a; i++) {
+                           System.out.print(array[i]+" ");
+                       }
+System.out.println();
+
+int largest = array[0];
+int smallest = array[0];
+
+                        for (int i =0; i<a; i++){
+                          if(array[i]>largest-1){
+                          largest = array[i];
+                          }else if(array[i]<smallest){
+                           smallest = array[i];
+                          }
+                        }
+                        System.out.println(largest);
+                        System.out.println(smallest);
+                        
+                        int secondLargest = Integer.MIN_VALUE;
+                        int secondSmallest = Integer.MAX_VALUE;
+
+                        for(int i=0; i<array.length; i++){
+                            if(array[i]>secondLargest && array[i]!=largest){
+                                secondLargest = array[i];
+                            }
+                             if (array[i]< secondSmallest && array[i]!= smallest){
+                                      secondSmallest = array[i];
+                            }
+                        }
+                         System.out.println(secondLargest);
+                        System.out.println(secondSmallest);
+                    }
+                }
+
