@@ -416,3 +416,35 @@ import java.util.Scanner;
 
                                                 }
                                             }
+
+
+
+ //find dublicate number inside array
+
+import java.util.Scanner;
+
+public class practice{
+    public static void duplicateNumber(int[] array, int m){
+        Scanner sc = new Scanner(System.in);
+        for(int i=0; i<m; i++){
+           for(int j=i+1; j<m; j++){
+            if(array[i]==array[j]){
+                System.out.print(array[i]+" duplicate number");
+            }
+           }
+        }
+
+    }
+                                                    public static void main(String[] args) {
+                                                        Scanner sc = new Scanner(System.in);
+                                                        System.out.println("enter array size");
+                                                        int m = sc.nextInt();
+                                                        int[] array = new int[m];
+                                                       System.out.println("enter array elements");
+                                                       for(int i=0; i<array.length; i++){
+                                                        array[i] = sc.nextInt();
+                                                        
+                                                       }
+                                                       duplicateNumber(array, m);
+                                                    }
+                                                }
