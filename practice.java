@@ -327,3 +327,26 @@ int smallest = array[0];
                                         checkTwoStrings(word1, word2);
                                      }
                                 }
+
+
+
+//Create a method to check even/odd length
+                                        import java.util.Scanner;
+                                        public class practice{
+                                            public static void checkEvenOddLength(String m){
+                                               
+                                                if(m.length()%2 !=0){
+                                                    System.out.println("odd");
+                                                } else {
+                                                    System.out.println("even");
+                                                }
+                                                    
+                                                
+                                            }
+                                            public static void main(String[] args) {
+                                                Scanner sc = new Scanner(System.in);
+                                                System.out.println("Enter String");
+                                                String m = sc.next();
+                                                checkEvenOddLength(m);
+                                            }
+                                        }
