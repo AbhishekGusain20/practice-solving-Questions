@@ -350,3 +350,43 @@ int smallest = array[0];
                                                 checkEvenOddLength(m);
                                             }
                                         }
+
+
+
+
+
+
+
+
+
+//Count a particular character
+
+//Take a String and a character.
+
+//String = banana
+//Character = a
+//Output:
+//a occurs 3 times
+
+                       import java.util.Scanner;
+                                        public class practice{
+                                            public static void stringCharacter(String name, char target ) {
+                                                Scanner sc = new Scanner(System.in);
+                                                int count = 0;
+                                                for(int i=0; i<name.length(); i++){
+                                                if(name.charAt(i)==target){
+                                                    count++;
+                                                }
+                                                }
+                                                System.out.println(name);
+                                                System.out.println(target+" "+"occurs"+" "+count);
+                                            }
+                                            public static void main(String[] args) {
+                                                Scanner sc = new Scanner(System.in);
+                                                System.out.println("Enter name");
+                                                String name = sc.next();
+                                                 System.out.println("Enter character");
+                                                 char target = sc.next().charAt(0);
+                                                 stringCharacter(name, target);
+                                            }
+                                        }
