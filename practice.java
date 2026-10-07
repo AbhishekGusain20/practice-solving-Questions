@@ -390,3 +390,29 @@ int smallest = array[0];
                                                  stringCharacter(name, target);
                                             }
                                         }
+
+
+
+
+
+//count spaces
+
+import java.util.Scanner;
+                                            public class practice{
+                                                public static void countGap(String Sentence){
+                                                    int count = 0;
+                                                    for(int i=0; i<Sentence.length(); i++){
+                                                       if(Sentence.charAt(i)==' '){
+                                                         count++;
+                                                       }
+                                                    }
+                                                    System.out.println("total gap: "+count);
+                                                }
+                                                public static void main(String[] args) {
+                                                    Scanner sc = new Scanner(System.in);
+                                                    System.out.println("Enter a sentence");
+                                                    String Sentence = sc.nextLine();
+                                                          countGap(Sentence);
+
+                                                }
+                                            }
