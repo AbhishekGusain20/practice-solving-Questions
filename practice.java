@@ -448,3 +448,37 @@ public class practice{
                                                        duplicateNumber(array, m);
                                                     }
                                                 }
+
+
+
+
+
+
+
+
+                                           //2D array
+import java.util.Scanner;
+public class practice{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter rows and coloumns");
+        int row = sc.nextInt();
+        int coloumn = sc.nextInt();
+        int[][] arrays = new int[row][coloumn];
+        System.out.println("Enter array elements");
+        for(int i=0; i<row; i++){
+            for(int j=0; j<coloumn; j++){
+                arrays[i][j] = sc.nextInt();
+            }
+        }
+        //print array
+        for(int i=0; i<row; i++){
+            for(int j=0; j<coloumn; j++){
+                System.out.print(arrays[i][j]+" ");
+            }
+              System.out.println();
+        }
+        
+
+    }
+}
