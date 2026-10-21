@@ -519,3 +519,36 @@ int[][] array = new int[row][coloumn];
  System.out.println(sum);
     }
 }
+
+
+
+
+
+
+ //count vowels and consonants
+
+    import java.util.Scanner;
+    public class practice{
+        public static void checkVowels(String Name){
+            int count = 0;
+            int count2 = 0;
+            Name = Name.toLowerCase();
+            for(int i=0; i<Name.length(); i++){
+                char ch = Name.charAt(i);
+            if(ch=='a' || ch =='e' || ch=='i' || ch=='o' || ch=='u'){
+count++;
+            } else if(ch >='a' && ch<='z'){
+                count2++;
+            }
+        }
+        System.out.println("vowels"+count);
+        System.out.println("consonants"+count2);
+        }
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter string");
+            String Name = sc.next();
+            checkVowels(Name);
+
+        }
+    }
