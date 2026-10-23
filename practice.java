@@ -552,3 +552,39 @@ count++;
 
         }
     }
+
+
+
+
+
+    //find the smallest element in array
+    import java.util.Scanner;
+ public class practice{
+ public static void smallestElement(int array[],int m){
+ //print array
+ for(int i=0; i<array.length; i++){
+    System.out.print(array[i]+" ");
+ }
+ System.out.println();
+
+ int smallest = array[0];
+ for(int i=1; i<array.length; i++){
+    if(array[i]<smallest){
+        smallest = array[i];
+    }
+ }
+ System.out.println("smallest element is: "+smallest);
+ }
+ public static void main(String[] args){
+ Scanner sc = new Scanner(System.in);
+ System.out.println("enter array size");
+ int m = sc.nextInt();
+ int[] array = new int[m];
+ System.out.println("Enter elements");
+ for(int i=0; i<array.length; i++){
+ array[i] = sc.nextInt();
+ }
+smallestElement(array, m);
+
+ }
+ }
