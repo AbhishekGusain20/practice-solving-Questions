@@ -588,3 +588,25 @@ smallestElement(array, m);
 
  }
  }
+
+
+
+
+//Reverse a number 
+ import java.util.Scanner;
+ public class practice{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Numbers");
+        int numbers = sc.nextInt();
+        System.out.println(numbers);
+        // reverse
+        int reverse = 0;
+        while(numbers>0){
+            int digit = numbers % 10;
+            reverse = reverse * 10 + digit;
+            numbers = numbers / 10;
+        }
+        System.out.println("Reverse: "+reverse);
+    }
+ }
