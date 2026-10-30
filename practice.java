@@ -610,3 +610,36 @@ smallestElement(array, m);
         System.out.println("Reverse: "+reverse);
     }
  }
+
+
+
+
+ //merge two arrays
+    import java.util.Scanner;
+    public class practice{
+        public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);   
+         System.out.println("enter array size 1");
+         int size1 = sc.nextInt();
+          System.out.println("enter array size 2");
+         int size2 = sc.nextInt();
+          int[] array = new int[size1];
+          int[]arrray = new int[size2];
+          System.out.println("enter array elements");
+          for(int i=0; i<array.length; i++){
+             array[i] = sc.nextInt();
+          }
+           System.out.println("enter array2 elements");
+          for(int i=0; i<arrray.length; i++){
+             arrray[i] = sc.nextInt();
+          }
+
+          //ptint array 
+          for(int i=0; i<array.length; i++){
+            System.out.print(array[i]);
+          }
+           for(int i=0; i<arrray.length; i++){
+            System.out.print(arrray[i]);
+          }
+        }
+    }
