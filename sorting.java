@@ -305,3 +305,45 @@ public class sorting{
     }
 }
 
+
+
+ //find the second largest element in array
+    import java.util.Scanner;
+    public class sorting{
+        public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);  
+        System.out.println("enter array size");
+        int size = sc.nextInt();
+        int[] array = new int[size];
+        System.out.println("enter array elements");
+        for(int i=0; i<array.length; i++){
+            array[i] = sc.nextInt();
+        }  
+        //print array
+       for(int i=0; i<array.length; i++){
+            System.out.print(array[i]+" ");
+        } System.out.println();
+        //sorting
+        for(int i=0; i<array.length-i; i++){
+            for(int j=0; j<array.length-1-i; j++){
+                if(array[j]>array[j+1]){
+                    int temp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = temp; 
+                    
+                }
+            }
+        }
+        for(int i=0; i<array.length; i++){
+            System.out.print(array[i]+" ");
+        } 
+        System.out.println();
+        System.out.println("Second largest element: "+array[size-2]);
+
+        }
+    }
+
+
+
+
+
