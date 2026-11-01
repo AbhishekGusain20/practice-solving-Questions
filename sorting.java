@@ -1,3 +1,4 @@
+
 //Bubble sorting array in ascending order
 
 
@@ -343,6 +344,89 @@ public class sorting{
         }
     }
 
+
+
+
+
+
+
+
+import java.util.Scanner;
+        public class sorting{
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+                System.out.println("enter array1 size");
+                int size1 = sc.nextInt();
+                System.out.println("enter array2 size");
+                int size2 = sc.nextInt();
+                int[] array1 = new int[size1];
+                 int[] array2 = new int[size2];
+                  System.out.println("enter array1 elements");
+                  for(int i=0; i<array1.length; i++){
+                    array1[i] = sc.nextInt();
+                  }
+                   System.out.println("enter array2 elements");
+                  for(int i=0; i<array2.length; i++){
+                    array2[i] = sc.nextInt();
+                  }
+
+                  for(int i=0; i<array1.length-1; i++){
+                    for(int j=0; j<array1.length-1-i; j++){
+                        if(array1[j]>array1[j+1]){
+                            int temp = array1[j];
+                            array1[j] = array1[j+1];
+                            array1[j+1] = temp;
+                            
+                        }
+                    }
+                  }
+for(int i=0; i<array1.length; i++){
+    System.out.print(array1[i]+" ");
+}System.out.println();
+
+                  for(int i=0; i<array2.length-1; i++){
+                    for(int j=0; j<array2.length-1-i; j++){
+                        if(array2[j]>array2[j+1]){
+                            int temp = array2[j];
+                            array2[j] = array2[j+1];
+                            array2[j+1] = temp;
+                            
+                        }
+                    }
+                  }
+                  for(int i=0; i<array2.length; i++){
+    System.out.print(array2[i]+" ");
+}System.out.println(); 
+                   
+
+int[] array3 = new int[size1+size2];
+int i=0, j=0, k=0;
+while(i<size1 && j<size2){
+    if(array1[i]<array2[j]){
+        array3[k] = array1[i];
+        i++;
+    }else{
+        array3[k] = array2[j];
+        j++;
+    }
+    k++;
+}
+ while(i<size1){
+    array3[k] = array1[i];
+    i++;
+    k++;
+ }
+ while(j<size2){
+    array3[k] = array2[j];
+    j++;
+    k++;
+ }
+ for(int x=0; x<array3.length; x++){
+System.out.print(array3[x]+" ");
+ }
+ System.out.println();
+                }
+            }
 
 
 
