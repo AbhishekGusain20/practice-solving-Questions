@@ -467,3 +467,41 @@ System.out.print(array3[x]+" ");
 
 
 
+
+
+
+//check whether an array is sorted or not
+                import java.util.Scanner;
+                public class sorting{
+                    public static void main(String[] args) {
+                        Scanner sc = new Scanner(System.in);
+                        System.out.println("enter array size");
+                        int n = sc.nextInt();
+                        int[] array = new int[n];
+                        System.out.println("enter array elements");
+                        for(int i=0; i<n; i++){
+                            array[i] = sc.nextInt();
+                        }
+                        for(int i=0; i<array.length; i++){
+                            System.out.print(array[i]+" ");
+                        }
+                        System.out.println();
+                        //check
+                        boolean sorted = true;
+                        for(int i=0; i<n-1; i++){
+                          if(array[i]>array[i+1]){
+                            sorted = false;
+                            break;
+                          }
+                        }
+                        if(sorted){
+                            System.out.println("array is sorted");
+                        }else {
+                            System.out.println("array is not sorted");
+                        }
+                    
+                    }
+                }
+
+
+
