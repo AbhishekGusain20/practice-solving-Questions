@@ -499,7 +499,57 @@ System.out.print(array3[x]+" ");
                         }else {
                             System.out.println("array is not sorted");
                         }
-                    
+
+
+
+
+
+
+                        //sort array and remove duplicate elements
+                import java.util.Scanner;
+                public class sorting{
+                    public static void main(String[] args) {
+                        Scanner sc = new Scanner(System.in);
+                        System.out.println("enter array size");
+                        int n = sc.nextInt();
+                        int[] array = new int[n];
+                        System.out.println("enter array elements");
+                        for(int i=0; i<n; i++){
+                            array[i] = sc.nextInt();
+                        }
+for(int i=0; i<array.length-1; i++){
+    for(int j=0; j<n-i-1; j++){
+        if(array[j]>array[j+1]){
+            int temp = array[j];
+            array[j] = array[j+1];
+            array[j+1] = temp;
+        }
+    }
+
+}
+ for(int i=0; i<array.length; i++){
+                            System.out.print(array[i]+" ");
+                        }
+                        System.out.println();
+
+
+                        int j=0;
+                        for(int i=0; i<n-1; i++){
+                            if(array[i]!=array[i+1]){
+                                array[j]=array[i];
+                                j++;
+
+                            }
+                        }
+                        array[j]=array[n-1];
+                        j++;
+                        System.out.println("remove duplicate element");
+                        for(int i=0; i<j; i++){
+                            System.out.print(array[i]+" ");
+                        }
+                    }
+                }
+
                     }
                 }
 
