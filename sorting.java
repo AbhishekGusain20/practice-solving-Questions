@@ -599,7 +599,7 @@ for(int i=0; i<array.length-1; i++){
   //sort array using selection sort
                     import java.util.Scanner;
                     public class sorting{
-                        public static void insertionsort(int array[]){
+                        public static void selectionsort(int array[]){
                             for(int i=0; i<array.length; i++){
                          System.out.print(array[i]+" ");
                             }
@@ -625,7 +625,7 @@ for(int i=0; i<array.length-1; i++){
                                 array[smallest] = array[i];
                                 array[i] = temp;
                             }
-                         insertionsort(array);
+                         selectionsort(array);
                         }
                     }
 
