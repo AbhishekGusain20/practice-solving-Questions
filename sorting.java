@@ -720,3 +720,44 @@ import java.util.Scanner;
                                     }
                                 }
 
+
+
+
+
+//sort only odd numbers in ascending order and keep even number in their original position
+                                    import java.util.Scanner;
+                                    public class sorting{
+                                        public static void selectionsort(int array[]){
+                                            for(int i=0; i<array.length; i++){
+                                                System.out.print(array[i]+" ");
+                                            }
+                                        }
+                                        public static void main(String[] args) {
+                                            Scanner sc = new Scanner(System.in);
+                                            System.out.println("enter elements");
+                                            int size = sc.nextInt();
+                                            int[] array = new int[size];
+                                            System.out.println("enter array elements");
+                                            for(int i=0; i<array.length; i++){
+                                                array[i] = sc.nextInt();
+                                            }
+                                            //selection sort
+                                            for(int i=0; i<size-1; i++){
+                                                int smallest = i;
+                                                if(array[i]%2!=0){
+                                                 smallest = i;
+                                                }
+                                                for(int j=i+1; j<array.length; j++){
+                                                    if(array[j]%2!=0 && array[smallest]>array[j]){
+                                                        smallest=j;
+                                                    
+                                                    }
+                                                }
+                                                int temp = array[smallest];
+                                                array[smallest] = array[i];
+                                                array[i] = temp;
+                                            }
+                                            selectionsort(array);
+                                        }
+                                    }
+
