@@ -676,3 +676,47 @@ import java.util.Scanner;
                                 }
                             }
 
+
+
+
+
+
+
+
+ //sort array in descending order
+                                import java.util.Scanner;
+                                
+                                public class sorting{
+                                    public static void selectionsort(int array[]){
+                                        for(int i=0; i<array.length; i++){
+                                    System.out.print(array[i]+" ");
+                                        }
+                                }
+                                    public static void main(String[] args) {
+                                     Scanner sc = new Scanner(System.in);   
+                                     System.out.println("enter array size");
+                                     int size = sc.nextInt();
+                                     int[] array = new int[size];
+                                     System.out.println("enter array elements");
+                                     for(int i=0; i<array.length; i++){
+                                        array[i] = sc.nextInt();
+                                     }
+                                     //selection sort apply
+                                     for(int i=0; i<array.length-1; i++){
+                                        int largest = i; 
+                                        for(int j=i+1; j<array.length; j++){
+                                            if(array[largest]<array[j]){
+                                            largest=j;
+                                            }
+                                        }
+                                        //swaping
+                                        int temp = array[largest];
+                                        array[largest] = array[i];
+                                        array[i]= temp;
+                                     }
+
+                                     //call function
+                                      selectionsort(array);
+                                    }
+                                }
+
