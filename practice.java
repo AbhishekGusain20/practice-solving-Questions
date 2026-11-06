@@ -643,3 +643,22 @@ smallestElement(array, m);
           }
         }
     }
+
+
+
+
+
+
+
+ //reverse string 
+        import java.util.Scanner;
+        public class pracice{
+            public static void main(String[] args){
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Enter string");
+                String anything = sc.nextLine();
+                for(int i=anything.length()-1; i>0; i--){
+                    System.out.print(anything.charAt(i));
+                }
+            }
+        }
