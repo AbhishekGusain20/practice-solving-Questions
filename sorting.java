@@ -806,3 +806,53 @@ import java.util.Scanner;
                                         }
                                     
                                 }
+
+
+
+
+
+  // Sort an array in ascending order using Bubble Sort and then descending order using Selection Sort.
+                                import java.util.Scanner;
+                                public class sorting{
+                                    public static void main(String[] args) {
+                                        Scanner sc = new Scanner(System.in);
+                                        System.out.println("enter array size");
+                                        int size = sc.nextInt();
+                                        int[] array = new int[size];
+                                        for(int i=0; i<array.length; i++){
+                                            array[i] = sc.nextInt();
+                                        }
+                                        for(int i=0; i<array.length-1; i++){
+                                            for(int j=0; j<array.length-1-i; j++){
+                                                if(array[j]>array[j+1]){
+                                                    int temp = array[j];
+                                                    array[j] = array[j+1];
+                                                    array[j+1] = temp;
+                                                }
+                                            }
+                                        }
+                                        //asscending
+                                        for(int i=0; i<array.length; i++){
+                                            System.out.print(array[i]+" ");
+                                        }
+                                        System.out.println();
+
+                                        for(int i=0; i<array.length-1; i++){
+                                            int largest = i;
+                                            for(int j=i+1; j<array.length; j++){
+                                        if(array[largest]<array[j]){
+                                            largest =j;
+                                        }
+                                            
+                                            }
+                                            int temp = array[largest];
+                                            array[largest] = array[i];
+                                            array[i] = temp;
+                                        }
+                                        //descending
+                                        for(int i=0; i<array.length; i++){
+                                            System.out.print(array[i]+" ");
+                                        }
+                                    }
+                                }
+                                
