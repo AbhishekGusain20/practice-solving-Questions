@@ -646,10 +646,6 @@ smallestElement(array, m);
 
 
 
-
-
-
-
  //reverse string 
         import java.util.Scanner;
         public class pracice{
@@ -662,3 +658,22 @@ smallestElement(array, m);
                 }
             }
         }
+
+ //max of three number
+            public class practice{
+                public static void main(String[] args) {
+                   
+                    int a = 44;
+                    int b = 49;
+                    int c = 99;
+                   if(a>b){
+                    System.out.println("a is max number");
+                   }else if(b>c){
+                    System.out.println("b is max number");
+                   }else if(a>c){
+                    System.out.println("a is max number");
+                   }else{
+                    System.out.println("c is max number");
+                   }
+                }
+            }
