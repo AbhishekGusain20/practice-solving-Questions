@@ -722,3 +722,26 @@ smallestElement(array, m);
                         }
                         }
                     }
+
+
+
+ //Count the digits in a given number
+                            import java.util.Scanner;
+                            public class practice{
+                                public static void countdigits(int count, int i){
+                                    System.out.println("total digit: "+count);
+                                }
+                                public static void main(String[] args) {
+                                    Scanner sc = new Scanner(System.in);
+                                    System.out.println("Enter a number");
+                                    int number = sc.nextInt();
+                                    int count = 0;
+                                    int i = 0;
+                                    while(0<number){
+                                        count++;
+                                        number = number/10;
+                                    }
+                                    countdigits(count, i);
+                                   
+                                }
+                            }
