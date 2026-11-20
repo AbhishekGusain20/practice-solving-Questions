@@ -816,3 +816,30 @@ public static void main(String[] args) {
                     System.out.println(fre(number, d));
                 }
             }
+
+
+
+
+
+
+
+
+                // find the sum of all digit number
+                import java.util.Scanner;
+                public class practice{
+                    public static int sum(int number){
+                        int total = 0;
+                     while(number>0){
+                        int digit = number%10;
+                        number = number/10;
+                         total = total + digit;
+                     }
+                     return total;
+                    }
+                    public static void main(String[] args){
+                        Scanner sc = new Scanner(System.in);
+                        System.out.println("enter a number");
+                        int number = sc.nextInt();
+                        System.out.println(sum(number));
+                    }
+                }
