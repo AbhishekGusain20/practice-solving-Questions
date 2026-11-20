@@ -780,3 +780,39 @@ public static void main(String[] args) {
     System.out.println(inverse);
 }
 }
+
+
+
+
+
+
+
+// frequency of a digit
+
+
+            import java.util.Scanner;
+            public class practice{
+                public static int fre(int number, int d){
+                        int count = 0;
+                         
+
+                        while(number > 0){
+                            int digit = number % 10;
+                            number = number / 10;
+
+                            if(digit == d){
+                             count++;
+                            }
+                        }
+                        return count;
+                    } 
+            
+                public static void main(String[] args) {
+                    Scanner Sc = new Scanner(System.in);
+                    System.out.println("ENter a number");
+                   int number = Sc.nextInt();
+                   int d = Sc.nextInt();
+
+                    System.out.println(fre(number, d));
+                }
+            }
