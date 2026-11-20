@@ -893,3 +893,31 @@ public static void main(String[] args) {
                             }
                         }
 
+
+
+// conversion
+                            import java.util.Scanner;
+                            public class practice{
+                                public static int conversion(int number, int base){
+                                int count = 0;
+                                int multiplier = 1;
+                                while(number>0){
+                                    int digit = number%base;
+                                    count = count+digit*multiplier;
+                                    multiplier = 10*multiplier;
+                                    number = number/base;
+                                    
+                                }
+                                return count;
+                            }
+                                public static void main(String[] args){
+                                    Scanner sc = new Scanner(System.in);
+                                    System.out.println("Enter a number");
+                                   
+                                    int number = sc.nextInt();
+
+                                     System.out.println("Enter a base");
+                                      int base = sc.nextInt();
+                                      System.out.println("converion of number is: "+conversion(number, base));
+                                }
+                            }
