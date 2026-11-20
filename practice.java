@@ -843,3 +843,33 @@ public static void main(String[] args) {
                         System.out.println(sum(number));
                     }
                 }
+
+
+
+
+ //find largest digit
+
+                    import java.util.Scanner;
+                    public class practice{
+                        public static int largest(int number){
+                            int count = 0;
+                            while(number>0){
+                                int digit = number%10;
+                                number = number/10;
+                                if(digit>count){
+                                    count = digit;
+                                }
+                            }
+                            return count;
+                        }
+                        public static void main(String[] args){
+                            Scanner sc = new Scanner(System.in);
+                            System.out.println("Enter a number");
+                            int number = sc.nextInt();
+                            System.out.println("largest digit is : "+largest(number));
+                        }
+                    }
+
+
+
+
