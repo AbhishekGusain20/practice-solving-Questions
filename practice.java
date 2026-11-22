@@ -1028,3 +1028,35 @@ if(found){
     }
 }        
 
+
+
+ //Swapping array[0] with array[2]
+
+import java.util.Scanner;
+
+public class practice{
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter a size");
+            int size = sc.nextInt();
+            System.out.println("Enter a elements");
+            int[] array = new int[size];
+            for(int i=0; i<array.length; i++){
+                array[i] = sc.nextInt();
+            }
+            for(int i=0; i<array.length; i++){
+                System.out.print(array[i]+" ");
+            }
+            System.out.println();
+            //swapping
+            int temp = array[0];
+            array[0] = array[2];
+            array[2] = temp;
+
+            for(int i=0; i<array.length; i++){
+                System.out.print(array[i]+" ");
+            }
+            System.out.println();
+        }
+    }
+
