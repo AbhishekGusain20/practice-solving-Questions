@@ -972,3 +972,58 @@ public class practice{
         }
     }
 
+
+
+//Second largest element
+
+import java.util.Scanner;
+
+public class practice{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter array size");
+        int size = sc.nextInt();
+        System.out.println("enter array elements");
+        int[] array = new int[size];
+        for(int i=0; i<array.length; i++){
+        array[i] = sc.nextInt();
+        }
+        //print array elemen
+      for(int i=0; i<array.length; i++){
+        System.out.print(array[i]);
+        
+      }
+      //bublle sort
+      for(int i=0; i<array.length-1; i++){
+        for(int j=0; j<array.length-i-1; j++){
+            if(array[j]>array[j+1]){
+                int temp = array[j];
+                array[j] = array[j+1];
+                array[j+1] = temp;
+            }
+        }
+      }
+      //print sorted array
+      for(int i=0; i<array.length; i++){
+        System.out.print(array[i]);
+      }
+System.out.println();
+//find second largest element
+int largest = array[size]-1;
+int secondLargest = 0;
+boolean found = false;
+for(int i=array[size]-2; i>=0; i--){
+    if(array[i] != largest){
+     secondLargest = array[i];
+     found = true;
+    }
+}
+if(found){
+    System.out.println(secondLargest);
+}else{
+    System.out.println("no distnct element");
+}
+
+    }
+}        
+
