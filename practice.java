@@ -1060,3 +1060,36 @@ public class practice{
         }
     }
 
+
+
+
+//Write code to swap the last two elements.
+
+import java.util.Scanner;
+
+public class practice{
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter a size");
+            int size = sc.nextInt();
+            System.out.println("Enter a elements");
+            int[] array = new int[size];
+            for(int i=0; i<array.length; i++){
+                array[i] = sc.nextInt();
+            }
+            for(int i=0; i<array.length; i++){
+                System.out.print(array[i]+" ");
+            }
+            System.out.println();
+            //swapping
+            int temp = array[size-1];
+            array[size-1] = array[size-2];
+            array[size-2] = temp;
+
+            for(int i=0; i<array.length; i++){
+                System.out.print(array[i]+" ");
+            }
+            System.out.println();
+        }
+    }
+
