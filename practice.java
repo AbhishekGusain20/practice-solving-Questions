@@ -949,3 +949,26 @@ public class practice{
     }
 }
 
+
+
+
+//find index 
+    public class practice{
+        public static void main(String[] args) {
+            int[] array = new int[6];
+            array[0] = 15;
+            array[1] = 20;
+            array[2] = 30;
+            array[3] = 10;
+            array[5] = 8;
+            int idx = -1;
+            for(int i=0; i<array.length; i++){
+                if(array[i] == 10){
+            idx = i;
+            break;
+                }
+            }
+            System.out.println(idx);
+        }
+    }
+
