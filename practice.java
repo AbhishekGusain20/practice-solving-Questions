@@ -1119,3 +1119,26 @@ public class practice{
     }
 }        
 
+
+//print only numbers
+   import java.util.Scanner;
+   public class practice{
+   public static void main(String[] args) {
+   Scanner sc = new Scanner(System.in);
+   System.out.println("enter a size");
+   int size = sc.nextInt();
+   System.out.println("enter array elements");
+   int[] array = new int[size];
+   for(int i=0; i<array.length; i++){
+    array[i] = sc.nextInt();
+   }  
+   //print array
+   for(int i=0; i<array.length; i++){
+   if(array[i]%2==0){
+    System.out.print(array[i]+" ");
+   }
+   } 
+   System.out.println();
+
+    }
+   }     
