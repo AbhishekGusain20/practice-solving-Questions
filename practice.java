@@ -1255,3 +1255,38 @@ public class practice{
     System.out.println("largest element: "+largest);  
     }
     }
+
+
+
+ //Diagonal elemets sum
+
+        import java.util.Scanner;
+
+public class practice{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a array size");
+        int size1 = sc.nextInt();
+        int size2 = sc.nextInt();
+        int[][] array = new int[size1][size2];
+        System.out.println("Enter arrrrray elements");
+        for(int i=0; i<size1; i++){
+            for(int j=0; j<size2; j++){
+                array[i][j] = sc.nextInt();
+            }
+        }
+        //print array
+        for(int i=0; i<size1; i++){
+        for(int j=0; j<size2; j++){
+            System.out.print(array[i][j]+" ");
+        }    
+        System.out.println();
+        }
+    //find sum of diagonal elements
+    int sum = 0;
+    for(int i=0; i<size1; i++){
+    sum = sum+array[i][i];
+    }
+    System.out.println("Diagonal element sum: "+sum);  
+    }
+    }
