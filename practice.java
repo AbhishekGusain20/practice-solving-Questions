@@ -1142,3 +1142,41 @@ public class practice{
 
     }
    }     
+
+
+//2d array elements sum
+import java.util.Scanner;
+
+public class practice{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a array size");
+        int size1 = sc.nextInt();
+        int size2 = sc.nextInt();
+        int[][] array = new int[size1][size2];
+        System.out.println("Enter arrrrray elements");
+        for(int i=0; i<size1; i++){
+            for(int j=0; j<size2; j++){
+                array[i][j] = sc.nextInt();
+            }
+        }
+        //print array
+        for(int i=0; i<size1; i++){
+        for(int j=0; j<size2; j++){
+            System.out.print(array[i][j]+" ");
+        }    
+        System.out.println();
+        }
+
+    //sum of elements
+    int sum = 0;
+    for(int i=0; i<size1; i++){
+    for(int j=0; j<size2; j++){
+        sum = sum+array[i][j];
+    }
+    }
+
+    System.out.println("total: "+sum);
+       
+    }
+    }
