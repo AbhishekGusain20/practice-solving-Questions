@@ -1325,3 +1325,62 @@ public class practice{
 
     }
 }
+
+
+
+//spiral matrix
+import java.util.Scanner;
+public class practice{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a size");
+        int size1 = sc.nextInt();
+        int size2 = sc.nextInt();
+        int[][] array = new int[size1][size2];
+        System.out.println("enter array elements");
+        for(int i=0; i<size1; i++){
+        for(int j=0; j<size2; j++){
+            array[i][j] = sc.nextInt();
+        }    
+        }
+        for(int i=0; i<size1; i++){
+            for(int j=0; j<size2; j++){
+                System.out.print(array[i][j]+" ");
+            }
+            System.out.println();
+        }
+//spiral 
+int toprow = 0;
+int bottomrow = size1-1;
+int leftcol = 0; 
+int rightcol = size2-1;
+int total = 0;
+while(total < size1*size2){
+    //toprow- leftcol to rightcol
+    for(int j=leftcol; j<=rightcol; j++){
+        System.out.print(array[toprow][j]+" ");
+        total++;
+    }
+    toprow++;
+    //rightcol- toprow to bottomrow
+for(int i=toprow; i<=bottomrow; i++){
+    System.out.print(array[i][rightcol]+" ");
+    total++;
+}
+rightcol--;
+    //bottomrow- rightcol to leftcol
+for(int j=rightcol; j>=leftcol; j--){
+    System.out.print(array[bottomrow][j]+" ");
+    total++;
+}
+bottomrow--;
+    //leftcol- bottomrow to toprow
+for(int i=bottomrow; i>=toprow; i--){
+    System.out.print(array[i][leftcol]+" ");
+    total++;
+}    
+leftcol++;
+}
+
+    }
+}
